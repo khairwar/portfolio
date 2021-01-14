@@ -1,0 +1,66 @@
+h1{
+    color:rgb(108, 255, 140);
+    text-align:center;
+    /*scroll-margin:50px;*/
+    padding:50px    
+ } 
+ *{
+    
+     background-color: #ffffff; 
+ }
+ .header *{
+     border:solid;
+     background-color: #7c7c7c
+ }
+.header{
+    background-color: rgb(163, 163, 163);
+    display: flex;
+    justify-content:space-evenly;
+    border : solid;
+}
+.menu{
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    padding:50px;
+    margin-left:100px;
+}
+.grid{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*align-items: flex-start;*/
+    flex-direction: row-reverse;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}                           
+.menu a{
+    margin-left:50px;
+    
+}
+a:link{
+    color:rgb(0, 0, 0)
+}
+a:visited{
+    color:rgb(255, 0, 0);
+}
+.item{
+    position:relative;
+}
+.item p{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%, -50%); 
+   transform:rotate(20deg);
+   opacity:0;
+   
+}
+.item:hover p{
+    opacity:1;
+}
+.item:hover img{
+ opacity:0.33;
+}
